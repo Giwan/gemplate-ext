@@ -1,0 +1,25 @@
+{
+  "name": "gemplate-ext",
+  "version": "1.0.0",
+  "description": "A basic template for ES6 and React based chrome extension.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Giwan/gemplate-ext.git"
+  },
+  "keywords": [
+    "react",
+    "es6",
+    "extension",
+    "chrome"
+  ],
+  "author": "Giwan Persaud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Giwan/gemplate-ext/issues"
+  },
+  "homepage": "https://github.com/Giwan/gemplate-ext#readme"
+}
