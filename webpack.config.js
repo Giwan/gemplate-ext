@@ -7,7 +7,7 @@
 module.exports = {
   context: __dirname + "/src",
   entry: {
-    javascript: './index.js'
+    javascript: './index.jsx'
   },
 
   output: {
@@ -49,16 +49,7 @@ module.exports = {
                 'autoprefixer?browsers=last 3 versions',
                 'sass?outputStyle=expanded'
             ]
-        },
-        {
-          /*
-           * Process SCSS files from bottom to top
-           * first SASS and then autoprefixer
-           */
-          test: /\.(css)$/,
-          include: /src/,
-          loader: "file?name=[name].[ext]",
-          },
+      },
 
       {
         /*
@@ -88,7 +79,7 @@ module.exports = {
     root: __dirname,
     // alias directories to search for
     alias: {},
-    modulesDirectories: ["node_modules","api", "images", "skin"],
+    modulesDirectories: ["node_modules"],
     // allows files to be required without extensions
     extensions: ["", ".js", ".jsx", ".json"]
   }
