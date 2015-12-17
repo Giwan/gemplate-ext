@@ -4,6 +4,8 @@
   "description": "A basic template for ES6 and React based chrome extension.",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -r dev/*",
+    "start": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,44 @@
   "bugs": {
     "url": "https://github.com/Giwan/gemplate-ext/issues"
   },
-  "homepage": "https://github.com/Giwan/gemplate-ext#readme"
+  "homepage": "https://github.com/Giwan/gemplate-ext#readme",
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "babel": "^6.3.13",
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.17",
+    "babel-jest": "^5.3.0",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-add-module-exports": "^0.1.1",
+    "babel-plugin-react-transform": "^1.1.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "css-loader": "^0.23.0",
+    "eslint": "^1.10.3",
+    "eslint-loader": "^1.1.1",
+    "file-loader": "^0.8.5",
+    "jest-cli": "^0.8.2",
+    "react-addons-test-utils": "^0.14.3",
+    "react-hot-loader": "^1.3.0",
+    "sass": "^0.5.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ],
+    "plugins": [
+      "add-module-exports",
+      "transform-decorators-legacy"
+    ]
+  }
 }
